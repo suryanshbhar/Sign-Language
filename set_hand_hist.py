@@ -27,6 +27,10 @@ def build_squares(img):
 
 def get_hand_hist(webcam_permission):
 	
+	if webcam_permission==False:
+		print("Give webcam permission.")
+		return 'No permission Given'
+	
 	cam = cv2.VideoCapture(1)
 	if cam.read()[0]==False:
 		cam = cv2.VideoCapture(0)
