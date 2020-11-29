@@ -283,7 +283,7 @@ if __name__ == "__main__" :
 
 
 	check = Button(gui, text = "Generate Hand Histogram", fg = "Black", 
-						bg = "Red", command = ekaur) 
+						bg = "Red", command = ekaur)
 
 	# enterText2 = Label(gui, text = "Press 'S' to save the GUI and 'C' to redo the Histogram", 
 	# 								bg = "light blue") 

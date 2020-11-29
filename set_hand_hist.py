@@ -25,7 +25,8 @@ def build_squares(img):
 		y+=h+d
 	return crop
 
-def get_hand_hist():
+def get_hand_hist(webcam_permission):
+	
 	cam = cv2.VideoCapture(1)
 	if cam.read()[0]==False:
 		cam = cv2.VideoCapture(0)
@@ -68,4 +69,4 @@ def get_hand_hist():
 		pickle.dump(hist, f)
 
 
-get_hand_hist()
+#get_hand_hist()
